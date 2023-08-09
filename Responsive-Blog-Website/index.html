@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <section id="section1" style="background-image: url(assets/img/bg1.jpg);background-repeat: no-repeat; background-size: cover;">
+    <nav class="navbar navbar-expand-lg bg-body-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="productsDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                <li><a class="dropdown-item" href="index.html">Product 1</a></li>
+                <li><a class="dropdown-item" href="index.html">Product 2</a></li>
+                <li><a class="dropdown-item" href="index.html">Product 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="resourcesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                <li><a class="dropdown-item" href="index.html">Resource 1</a></li>
+                <li><a class="dropdown-item" href="index.html">Resource 2</a></li>
+                <li><a class="dropdown-item" href="index.html">Resource 3</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Pricing</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btns">
+          <!-- Add your buttons here -->
+          <button type="submit" class="btn btn-outline-dark " style="border-radius: 20px;">login</button>
+          <button type="submit" class="btn btn-dark" style="border-radius: 20px; width: 15vh;">submit</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <p id="title" class="fs-2"><strong>Welcome to TrendBlogger :)</strong></p>
+          <div class="input-field">
+            <input type="search" id="searchInput" placeholder="Search">
+            <button class="btn btn-dark" id="searchButton">Search</button>
+            <ul id="searchSuggestions"></ul>
+          </div>
+        </div>
+        <div class="col">
+          <p class="fs-4"><b>Trend Blogger features about the latest trends and keep you updated all the time.We excite readers and give them a reason to read more.The blog provides the opinions of wide range of audience over a particular trend.Trend Blogger staff are proud to be able to bring you this blog about the trending technologies.If there’s something you think to improve let us know.</b></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section style="background-image: linear-gradient(to right, #b6fbff, #83a4d4);">
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active cato1" data-bs-toggle="pill" href="#tab1">View all</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab2">Designs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab3">Product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab4">Development</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab5">Management</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container mt-5" id="tabContentContainer">
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+          <!-- Card elements -->
+        </div>
+
+        <div class="tab-pane" id="tab2">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body" style="background-color: gainsboro;">
+                  <div class="image-container">
+                    <img src="./assets/img/img1.jpg" class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Sienna Rose</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">08 Aug 2023</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">UX review presentation</h4>
+                  <p class="card-text">UX presentation include the strategy behind your research and key customer insights. Use Who We Interviewed slides, introduce opportunity areas, and highlight metrics like bounce rates at checkout — this will show your team where customers are dropping off.A UX portfolio presentation is about showing your future employer and team that you can articulate your ideas.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body" style="background-color: gainsboro;">
+                  <div class="image-container">
+                    <img src="./assets/img/img2.jpg"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Thomas Lee</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">28 Feb 2023</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Design</h4>
+                  <p class="card-text">User interface (UI) design is the process designers use to build interfaces in software or computerized devices, focusing on looks or style.User interface design or user interface engineering is the design of user interfaces for machines and software, such as computers, home appliances, mobile devices, and other electronic devices, with the focus on maximizing usability and the user experience.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tab-pane" id="tab3">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body" style="background-color: gainsboro;">
+                  <div class="image-container">
+                    <img
+                      src="assets/img/img3.jpg"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Hudson Lee</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">16 Nov 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;"> Laptop</h4>
+                  <p class="card-text">This ASUS laptop delivers a snappy experience with its RTX 3050 graphics and Ryzen 9 processor, and an immersive and enjoyable overall experience thanks to its OLED display. The ASUS Vivobook Pro 14 OLED proves that you don't need a bulky gaming machine to get powerful performance.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body" style="background-color: gainsboro;">
+                  <div class="image-container">
+                    <img src="assets/img/img4.jpg"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Frank Finn</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">26 Jul 2021</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Wireless earbuds</h4>
+                  <p class="card-text">The Samsung Galaxy Buds2 Pro True Wireless are the upgraded variant of the Samsung Galaxy Buds2 Truly Wireless. While both buds are comfortable and well-built, the Pro have a higher IP certification of IPX7 and a significantly better noise isolation performance. They also support Bluetooth 5.3, and their sound profile is more neutral, which some users may prefer.Enjoy a next-level listening experience that lets you feel every note like you're there. </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tab-pane" id="tab4">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body" style="background-color: gainsboro;">
+                  <div class="image-container">
+                    <img
+                      src="assets/img/img5.jpg"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Mary Jewel</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">17 Oct 2020</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;"> Website Landing Page</h4>
+                  <p class="card-text">A Website Landing Page is a standalone page, designed for a specific campaign. Landing pages have a call-to-action and there should be nothing to distract your clients from converting. A homepage or a landing page exists as a single page of a larger website.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body" style="background-color: gainsboro;">
+                  <div class="image-container">
+                    <img
+                      src="assets/img/img6.jpg"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">John Patrick</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">14 May 2020</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Landing Page</h4>
+                  <p class="card-text">What is in a landing page?
+                    What Is a Landing Page? Landing Pages Explained | Unbounce
+                    In digital marketing, a landing page is a standalone web page, created specifically for a marketing or advertising campaign. It's where a visitor “lands” after they click on a link in an email, or ads from Google, Bing, YouTube, Facebook, Instagram, Twitter, or similar places on the web.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="tab5">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body" style="background-color: gainsboro;">
+                  <div class="image-container">
+                    <img
+                      src="assets/img/img7.jpg"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Bella Grace</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">31 Jan 2019</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;"> Team management</h4>
+                  <p class="card-text">Team management focuses on motivating a group of employees to work toward a common goal. Differing styles of team management achieve goals in different ways. It's the duty of team managers to support the needs of team members.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body" style="background-color: gainsboro;">
+                  <div class="image-container">
+                    <img
+                      src="assets/img/img8.jpg"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">David Ryan</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">02 Apr 2018</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Business Management</h4>
+                  <p class="card-text">Business management is the process of planning, organizing, directing, and controlling the activities of a business or organization to achieve its goals and objectives. It involves overseeing all aspects of a business, from finance and operations to marketing and human resources.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- Modal -->
+    <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal header -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p id="modal-date"></p>
+            <p id="modal-description"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <!-- Footer -->
+    <footer id="mainFooter" class="py-5 bg-dark text-white">
+      <div class="container py-md-5">
+        <div class="row justify-content-between align-items-center gy-3">
+          <div class="col-sm-12 col-md-6 text-center text-md-start mb-3">
+            <!-- Content for the left side of the footer -->
+            <p>&copy; 2023 Your Company. All rights reserved.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 text-center text-md-end">
+            <!-- Content for the right side of the footer -->
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+              <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
