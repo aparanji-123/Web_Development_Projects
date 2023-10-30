@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+
+  <style>
+    body{
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image:url("https://media.istockphoto.com/id/624878906/photo/triangular-abstract-background.jpg?s=170667a&w=0&k=20&c=VnsiNjJzorBBzZYJdxbUpOZT-pJnLoVaaPHnxths0Bg="); 
+      height:fit-content
+    }
+     button{
+    width: 100%;
+    /* height:40px; */
+    border-radius:30px;
+    background-color: #04494e;
+    font-family: "Roboto", sans-serif;
+  /* text-transform: uppercase; */
+    border:1px solid;
+    outline:none;
+    cursor:pointer;
+    font-size:1em;
+    font-weight:600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(84, 88, 86);
+    /* padding:10px */
+   }
+   .form-box{
+    border:3px solid rgb(12, 2, 2);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    border:0;
+    width: 400px;
+  height: 400px;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  height:fit-content
+   }
+   .inputbox button:hover {
+  /* background-position: right center; change the direction of the change here */
+  background-color: #64706c;
+}
+/* button:hover{
+
+} */
+   
+  </style>
+  </head>
+  <body>
+    <section >
+    
+      <div class="form-box" >
+        
+        <!-- <h2 >Welcome user</h2> -->
+       
+        <div class="inputbox" style="text-align: center; color: rgb(24, 19, 16);">
+          <h2 style="font-size: 40px; padding-bottom: 30px;">WELCOME USER</h2>
+          <button onclick="loginPage()"  style="border-radius:50px  ; padding:15px;color: rgb(245, 248, 245);
+          background: linear-gradient(to top, #053836 0%, #3cba92 100%);font: bold;font-size: 25px;" >Login</button><br><br>
+          <h2>   Or   </h2>
+          <button onclick="signUpPage()"  style="border-radius:50px  ; padding:15px;color: rgb(245, 248, 245);
+          background: linear-gradient(to top, #053836 0%, #3cba92 100%);font: bold;font-size: 25px;" >SignUp</button><br> <br />
+        </div>
+        
+      </div>
+    </section>
+  </body>
+  <script>
+    const loginPage = () => {
+      window.location.href = "http://localhost:2000/login";
+    };
+    const signUpPage = () => {
+      window.location.href = "http://localhost:2000/signup";
+    };
+  </script>
+</html>

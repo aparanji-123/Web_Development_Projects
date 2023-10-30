@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <style>   body {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background: linear-gradient(90deg, #89e5dc,#067267);
+      height:fit-content;
+    }
+    .card{
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  width: 350px;
+  height: 350px;
+  background-color: #ffffff;
+  padding: 10px 30px;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+
+.card_title {
+  text-align: center;
+  padding: 10px;
+}
+
+.card_title h1 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form input {
+  margin-bottom: 23px;
+  width: 90%;
+  background-color: #e2e2e2;
+  border: none;
+  outline: none;
+  padding: 15px 15px;
+  border-radius: 4px;
+}
+    form button {
+    /* background-color: #0e9456; */
+      background: linear-gradient(90deg, #08cfbb,#067267);
+
+    color: #ffffff;
+    font-size: 20px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 15px;
+    width: 100%;
+} </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="card">
+          <div class="card_title">
+            <h1>Login Page</h1>
+          </div>
+          <div class="form">
+          <form action="/loginvalidation" method="post">
+            <input type="text" name="username" id="username" placeholder="UserName" />
+            <br>
+            <input type="password" name="password" placeholder="Password" id="password" />
+            <br><br>
+            <button>Login</button>
+            <br><br>
+            </form>
+          </div>
+        </div>
+      </div>
+  </section>
+  </body>
+</html>

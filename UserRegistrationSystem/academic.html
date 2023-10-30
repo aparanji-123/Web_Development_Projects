@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Academic</title>
+        <!-- <link rel="stylesheet" type="text/css" href="ac.css"/> -->
+        <style>
+            body{
+                /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+                /* text-align: center; */
+                /* font-size: larger; */
+                font-family:Arial, Helvetica, sans-serif;
+                    background-size: cover;
+                    background-color:rgba(9, 151, 144, 0.781); ;
+
+                
+                
+            }
+            .main{
+                /* border: 5px solid white; */
+               margin-left: 60px;
+               margin-top: 75px;
+            }
+            .bt,.dp,.sc {
+                /* box-shadow: 4px 4px 4px 4px rgb(164, 164, 167); */
+                /* border: 2px solid black; */
+                width: 200px;
+                float: left;
+                margin-right: 20px;
+                height: 200px;
+                padding: 25px;
+                box-shadow: 10px 10px 5px 5px #013b36;
+                background-color: white;
+               color: #067267;
+                /* text-align: center; */
+                /* justify-content: center; */
+                /* text-align: center; */
+                border-radius: 10px;
+            }
+            .heading{
+                text-align: center;
+                color:white;
+                padding:10px ;
+            }
+            h3{
+                text-decoration: underline;
+            }
+            .bt h1,.sc h1,.dp h1{
+                text-align: center;
+                margin-top: 80px;
+            }
+            button{
+                background-color: rgb(8, 85, 85);
+                color:white;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .bname,.iname,.sname,.gname{
+                font-size: larger;
+                font-weight: bold;
+
+            }
+            </style>
+    </head>
+    <body>
+        <div >
+            <h1 class="heading">Academic Page</h1>
+            <div class="form-box">
+                <div class="form-value">
+
+                    <!-- <form action="/academic" method="post"> -->
+                        <div class="main">
+                            <div class="bt" >
+                                <h1 id="btech"> B.Tech</h1>
+                                <table id="tb">
+                                    <tr>
+                                        <td class="bname"></td>
+                                        <td class="bdetails"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bname"></td>
+                                        <td class="bdetails"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bname"></td>
+                                        <td class="bdetails"></td>
+                                    </tr>  
+                                     <tr>
+                                        <td class="bname"></td>
+                                        <td class="bdetails"></td>
+                                    </tr>   
+                                    <tr>
+                                        <td class="bname"></td>
+                                        <td class="bdetails"></td>
+                                    </tr>
+                                    
+                                </table>
+                                <button onclick="fun1()" id="btn1">More Info</button>
+                            </div>
+                            <div  class="dp">
+                                <h1 id="inter"> Intermediate</h1>
+                                <table id="tb2">
+                                    <tr>
+                                        <td class="iname"></td>
+                                        <td class="idetails"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="iname"></td>
+                                        <td class="idetails"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="iname"></td>
+                                        <td class="idetails"></td>
+                                    </tr>  
+                                     <tr>
+                                        <td class="iname"></td>
+                                        <td class="idetails"></td>
+                                    </tr>   
+                                  
+                                    
+                                </table>
+                                <button onclick="fun2()" id="btn2">More Info</button>
+                                
+                            </div>
+                            <div class="sc">
+                            <h1 id="ssc"> SSC</h1>
+                            <table id="tb3">
+                                <tr>
+                                    <td class="sname"></td>
+                                    <td class="sdetails"></td>
+                                </tr>
+                                <tr>
+                                    <td class="sname"></td>
+                                    <td class="sdetails"></td>
+                                </tr>
+                                <tr>
+                                    <td class="sname"></td>
+                                    <td class="sdetails"></td>
+                                </tr>  
+                            </table>
+                            <button onclick="fun3()" id="btn3">More Info</button>
+                    
+                </div>
+                <div  class="dp">
+                    <h1 id="Btech"> Devops</h1>
+                    <table id="tb4">
+                        <tr>
+                            <td class="gname"></td>
+                            <td class="gdetails"></td>
+                        </tr>
+                        <tr>
+                            <td class="gname"></td>
+                            <td class="gdetails"></td>
+                        </tr>
+                        <tr>
+                            <td class="gname"></td>
+                            <td class="gdetails"></td>
+                        </tr>  
+                         <tr>
+                            <td class="gname"></td>
+                            <td class="gdetails"></td>
+                        </tr>   
+                       
+                      </table>
+                      <button onclick="fun4()" id="btn4">More Info</button>
+                    <!-- </form> -->
+                </div>
+            </div>
+        </div>
+        <script>
+            function fun1(){
+                let y=document.getElementsByClassName("bname");
+                y[0].innerHTML="College ";
+                y[1].innerHTML="Branch ";
+                y[2].innerHTML="Year";
+                y[3].innerHTML="CGPA ";
+                y[4].innerHTML="SGPA";
+                let x=document.getElementsByClassName("bdetails");
+                x[0].innerHTML=": Aditya College of Engineering";
+                x[1].innerHTML=": Computer Science & Engineering";
+                x[2].innerHTML=": III";
+                x[3].innerHTML=": 7.69";
+                x[4].innerHTML=": 69%";
+                document.getElementById("btech").style.display="none";
+                document.getElementById("btn1").style.display="none";
+                document.getElementById("tb").style.marginTop="10px";
+            }
+            function fun2(){
+                let y=document.getElementsByClassName("iname");
+                y[0].innerHTML="College ";
+                y[1].innerHTML="Branch ";
+                y[2].innerHTML="Year";
+                y[3].innerHTML="CGPA ";
+                let x=document.getElementsByClassName("idetails");
+                x[0].innerHTML=": MEGA JUNIOR Engineering";
+                x[1].innerHTML=": MPC";
+                x[2].innerHTML=": 2018-2020";
+                x[3].innerHTML=": 8.9";
+
+                document.getElementById("inter").style.display="none";
+                document.getElementById("btn2").style.display="none";
+                document.getElementById("tb2").style.marginTop="10px";
+            }
+            function fun3(){
+                let y=document.getElementsByClassName("sname");
+                y[0].innerHTML="School ";
+                y[1].innerHTML="Year";
+                y[2].innerHTML="CGPA ";
+                let x=document.getElementsByClassName("sdetails");
+                x[0].innerHTML=": Sri Sadguru vidyalayam";
+                x[1].innerHTML=": 2017-2018";
+                x[2].innerHTML=": 9.8";
+
+                document.getElementById("ssc").style.display="none";
+                document.getElementById("btn3").style.display="none";
+                document.getElementById("tb3").style.marginTop="10px";
+            }   
+            function fun4(){
+                let y=document.getElementsByClassName("gname");
+                y[0].innerHTML="Subject ";
+                y[1].innerHTML="Marks";
+                y[2].innerHTML="internal marks";
+                let x=document.getElementsByClassName("gdetails");
+                x[0].innerHTML=":Meanstack";
+                x[1].innerHTML=": 75";
+                x[2].innerHTML=":50";
+
+                document.getElementById("Btech").style.display="none";
+                document.getElementById("btn4").style.display="none";
+                document.getElementById("tb4").style.marginTop="10px";
+            }
+
+        </script>
+    </body>
+</html>

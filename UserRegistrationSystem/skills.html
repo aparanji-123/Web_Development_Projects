@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Skills</title>
+        <link rel="stylesheet" type="text/css" href="ss.css"/>
+        <style>
+            .main{
+                margin-left: 70px;
+            }
+            .side{
+                width: 200px;
+                background-size: cover;
+                height: 400px;
+                background-color: rgb(8, 85, 85);
+                padding: 20px;
+                border-radius: 10px;
+                color:white;
+                float:left;
+                margin-left:40px;
+                margin-right:20px;
+            }
+            .head{
+                text-align: center;
+                font-size: 40px;
+            }
+            .side2{
+                width:900px;
+                height: 400px;
+                background-color:rgba(9, 151, 144, 0.781); ;
+                float:left;
+                padding: 20px;
+            }
+            button {
+                background-color:  rgb(8, 85, 85);
+                border: none;
+                color: white;
+            }
+            h2{
+                color:white;
+            }
+        ul{
+            font-size: larger;
+            line-height: 35px;
+            color:white;
+            font-weight: 800;
+        }
+            </style>
+    </head>
+    <body>
+        <section>
+           
+            <h1 class="head">SKILLS</h1>
+            <div class="main">
+                <div class="side">
+                    
+                      <button onclick="func1()" > <h3 > Hobbies</h3></button>
+                        <button onclick="func2()" > <h3> Technical skills</h3></button>
+                       <button onclick="func3()" > <h3>Interests</h3></button><br>
+                       <form action="/Next" method="post">
+                        <button onclick="SkillsPage()" style="color:rgb(8, 85, 85);background-color:white;padding:10px;border-radius: 10px;">Academic info</button>
+            </form>
+                </div>
+                <div class="side2">
+
+                    <ul type="none">
+                        <li class="sk"></li>
+                        <li class="sk"></li>
+                        <li class="sk"></li>
+                        <li class="sk"></li>
+                        <li class="sk"></li>
+                        <li class="sk"></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+        <script>
+            let y=document.getElementsByClassName("sk");
+         
+            function func1(){
+                y[0].innerHTML="COOKING";
+                y[1].innerHTML="LISTENING to MUSIC";
+                y[2].innerHTML="";
+                y[3].innerHTML="";
+            }
+            function func2(){
+                
+                y[0].innerHTML=" C++";
+                y[1].innerHTML=" JAVA";
+                y[2].innerHTML="HTML";
+                y[3].innerHTML="JAVA SCRIPT";
+
+            }
+            function func3(){
+                
+                y[0].innerHTML=" TRAVELLING";
+                y[1].innerHTML=" PAINTING";
+                y[2].innerHTML="SINGING";
+                y[3].innerHTML="";
+
+            }
+            function SkillsPage()  {
+              window.location.href = "http://localhost:2000/skills";
+            };
+        </script>
+    </body>
+    <!-- <form action="/Next" method="post">
+        <h2>Skills Page</h2><br><br>
+        <h4><ul type="disk">
+            <li>Hobbies: Listening Music,Watching Tv</li><br>
+            <li>Technical skills: C++,Java,HTML,JavaScript,Meanstack</li><br>
+            <li>Interests: Travelling,Singing songs,Painting</li>
+        </ul></h4><br><br>
+        <div class="inputbox">
+            <button >Next</button>
+        </div>
+    </form> -->
+
+
+
+
+
+</html>
